@@ -14,7 +14,7 @@ console.log(highestNumber)
 // using reduce function
 const highestNumber1=arr.reduce((max,ele)=>{
     return ele>max?ele:max
-});
+},0);
 console.log(highestNumber1);
 
 // using Math.max function.
