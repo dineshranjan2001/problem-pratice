@@ -12,16 +12,16 @@ for(let i=0;i<arr.length;i++){
 console.log(smallestNumber)
 
 // using reduce function
-const highestNumber1=arr.reduce((min,ele)=>{
+const smallestNumber1=arr.reduce((min,ele)=>{
     return min>ele?ele:min
 
     // we can also the Math.min function in side the reduce function.
     //return Math.min(min,ele);
 },arr[0]);
-console.log(highestNumber1);
+console.log(smallestNumber1);
 
 // using Math.max function.
-const highestNumber2=Math.min(...arr);
-console.log(highestNumber2);
+const smallestNumber2=Math.min(...arr);
+console.log(smallestNumber2);
 
 
