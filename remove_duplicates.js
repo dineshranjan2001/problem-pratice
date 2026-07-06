@@ -14,6 +14,7 @@ console.log(uniqueArr1);
 
 
 // without create new array remove the duplicates
+// two pointer 1st way
 
 // first sort the array in acesending order.
 arr.sort((a,b)=>a-b);
@@ -30,4 +31,18 @@ for(let readIndex=1;readIndex<arr.length;readIndex++){
 
 // reduce the original array's length with new writeIndex value
 arr.length=writeIndex;
+console.log(arr);
+
+// using two pointer way 
+// this is second way
+
+let i=0;
+for(let j=1;j<arr.length;j++){
+    if(arr[j]!==arr[i]){
+         i++;
+        arr[i]=arr[j]; 
+    }
+    
+}
+arr.length=i+1;
 console.log(arr);
