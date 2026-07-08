@@ -2,6 +2,7 @@
 
 const nonAlphaNumbericString = 'a$a*c(c)a#a';
 
+// 1st way
 const checkValidPalindrome = (string) => {
     const regex = /[^a-zA-Z0-9 ]/g;
     const validString = string.replace(regex, '').trim();
@@ -10,6 +11,7 @@ const checkValidPalindrome = (string) => {
 }
 console.log(checkValidPalindrome(nonAlphaNumbericString));
 
+// 2nd way
 const checkValidPalindrome1 = (string) => {
     const regex = /[^a-zA-Z0-9 ]/g;
     let i = 0;
