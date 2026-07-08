@@ -15,6 +15,7 @@ console.log(reverseString1);
 //3rd way
 // two pointer approach
 const reverseStringFn=(string)=>{
+    // [a,b,c]
     const chars=string.split('');
     let i=0;
     let j=chars.length-1;
